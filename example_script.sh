@@ -19,7 +19,6 @@
 export dataset="ex"
 export user="sharon"
 export ROOT_path="/tamir2/sharon/miRNA_models/Code/Features/"
-py_env="/tamir2/sharon/miniconda3/envs/miRNA_models1"
 
 
 # ========================================================================== #
@@ -36,22 +35,20 @@ matlabr2022b -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$d
 #
 # The scripts used here follows: "https://github.com/kslin/miRNA_models"
 # published by McGEary et al.
-
-source activate $py_env
  
 # Get Biochemical+ mRNA features
-cd ../Features/Biochemical
-./get_transcript_Biofeats.sh
+#cd ../Features/Biochemical
+#./get_transcript_Biofeats.sh
 
 # Get Biochemical+ miRNA features
 # Currently designed to run only if miRNA were not pre-processed
-if  [ -f reports/inputs/$dataset/mirseqs_rel.txt ]
-then
-  ./get_miR_Biofeats.sh
-fi
+#if  [ -f reports/inputs/$dataset/mirseqs_rel.txt ]
+#then
+#  ./get_miR_Biofeats.sh
+#fi
 
 # predict Biochemical+ features combined
-./predict_biochemical_feats.sh 
+#./predict_biochemical_feats.sh 
 
 
 # ========================================================================== #
@@ -63,8 +60,8 @@ fi
 # sites act independantly)
 #
 
-cd ../../Integrative/
-matlabr2022b -nojvm -nodesktop -nodisplay -singleCompThread -r "get_nominal_repression('$dataset'); quit;"
+#cd ../../Integrative/
+#matlabr2022b -nojvm -nodesktop -nodisplay -singleCompThread -r "get_nominal_repression('$dataset'); quit;"
 
 # ========================================================================== #
 #                           predict miBSIM model                             #
@@ -73,7 +70,7 @@ matlabr2022b -nojvm -nodesktop -nodisplay -singleCompThread -r "get_nominal_repr
 # Gets neighboring site information and corrects sites affective repression
 #
 
-cd ../miBSIM/
-matlabr2022b -nojvm -nodesktop -nodisplay -singleCompThread -r "get_miBSIM_repression('$dataset'); quit;"
+#cd ../miBSIM/
+#matlabr2022b -nojvm -nodesktop -nodisplay -singleCompThread -r "get_miBSIM_repression('$dataset'); quit;"
 
 echo "DONE"
