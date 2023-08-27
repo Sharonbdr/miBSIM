@@ -19,7 +19,7 @@
 export dataset="ex"
 export user="sharon"
 export ROOT_path="/tamir2/sharon/miRNA_models/Code/Features/"
-
+cd miBSIM-main
 ls -a
 ls -S
 # ========================================================================== #
