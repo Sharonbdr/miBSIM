@@ -19,7 +19,7 @@ cd miBSIM-main
 export dataset="ex"
 export user="sharon"
 export ROOT_path="/tamir2/sharon/miRNA_models/Code/Features/"
-matlab test_mat.m
+matlab -r "test_mat quit;"
 
 # ========================================================================== #
 #                             general features                               #
