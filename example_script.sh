@@ -26,7 +26,7 @@ export ROOT_path="/tamir2/sharon/miRNA_models/Code/Features/"
 # ========================================================================== #
 # Creates models input files and directories, and calculates general features
 cd Code/Integrative/
-matlab -c 27000@lm8-2 -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$dataset'); base_feat_table('$dataset','$user'); quit;"
+#matlab -c 27000@lm8-2 -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$dataset'); base_feat_table('$dataset','$user'); quit;"
 echo "done"
 
 # ========================================================================== #
@@ -37,8 +37,8 @@ echo "done"
 # published by McGEary et al.
  
 # Get Biochemical+ mRNA features
-#cd ../Features/Biochemical
-#./get_transcript_Biofeats.sh
+cd ../Features/Biochemical
+./get_transcript_Biofeats.sh
 
 # Get Biochemical+ miRNA features
 # Currently designed to run only if miRNA were not pre-processed
