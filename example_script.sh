@@ -19,14 +19,15 @@ cd miBSIM-main
 export dataset="ex"
 export user="sharon"
 export ROOT_path="/tamir2/sharon/miRNA_models/Code/Features/"
+matlab -nojvm -nodesktop -nodisplay -singleCompThread -r "test_mat; quit;"
 
 # ========================================================================== #
 #                             general features                               #
 # ========================================================================== #
 # Creates models input files and directories, and calculates general features
-cd Code/Integrative/
-matlab -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$dataset'); base_feat_table('$dataset','$user'); quit;"
-echo "done"
+#cd Code/Integrative/
+#matlab -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$dataset'); base_feat_table('$dataset','$user'); quit;"
+#echo "done"
 
 # ========================================================================== #
 #                          Biochemical features                              #
