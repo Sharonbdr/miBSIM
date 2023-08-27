@@ -25,7 +25,7 @@ export ROOT_path="/tamir2/sharon/miRNA_models/Code/Features/"
 # ========================================================================== #
 # Creates models input files and directories, and calculates general features
 cd Code/Integrative/
-matlab -c 27000@lm8-2 -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$dataset'); base_feat_table('$dataset','$user'); quit;"
+matlab -nojvm -nodesktop -nodisplay -singleCompThread -r "create_Input('$dataset'); base_feat_table('$dataset','$user'); quit;"
 echo "done"
 
 # ========================================================================== #
