@@ -1,10 +1,3 @@
-## Requirements
-
-- MATLAB 2021b and up
-- python 3.6 and up
-- python virtual environment listed below
-- ViennaRNA package installed (https://www.tbi.univie.ac.at/RNA/index.html#download)
-
 ## Environment
 
 tensorflow-gpu==1.13.1 #swap out tensorflow-gpu with tensorflow if not using GPUs
