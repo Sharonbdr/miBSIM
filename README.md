@@ -19,7 +19,7 @@ Data input
 This tool requires a txt file with transcripts of interest, columns delimited by '\t', vectors by ',':
 
  - genes :  a table of mRNAs containing the following columns- Name, UTR5, ORF, UTR3, phastcons100, phylops100, phastcons20, phylops20. 
-   Conservation vectors can be obtained using the (UCSC Genome Browser Database)[https://hgdownload.soe.ucsc.edu/downloads.html under Human genomes, hg38, Multiple alignment].
+   Conservation vectors can be obtained using the (UCSC Genome Browser Database)[https://hgdownload.soe.ucsc.edu/downloads.html] under Human genomes, hg38, Multiple alignment.
 
 An example is provided at Data/genes.txt.
 
@@ -29,7 +29,7 @@ Script
 The final model utilizes several published tools, therefore it requires numerous steps to calculate the final repression prediction. 
 
 1. Get biochemical features from the published Biochemical+ tool: 
-	Biochemical features are calculated using tools published by McGeary et al [https://github.com/kslin/miRNA_models].
+	Biochemical features are calculated using tools published by (McGeary et al)[https://github.com/kslin/miRNA_models].
 	Published code has been modified to allow for ease of execution, and according to the specific parameters used in our paper.
 	This is done using the python function:
 
