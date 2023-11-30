@@ -55,3 +55,12 @@ This is relevant in the case of running different subsets of transcripts for the
 
 An example bash script is provided under example_script.sh
 
+---
+Troubleshooting
+---
+Please make sure you set all files premissions to read write and execute. This is specificaly important for the following files:
+
+- Code/Features/Thermo/ViennaRNA/*
+- Code/Features/Conservation/pmc.markov
+- Code/Features/Conservation/pmc.sci
+- Code/Features/Conservation/spatt
