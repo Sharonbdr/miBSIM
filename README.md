@@ -10,7 +10,6 @@ System requirements
 - MATLAB 2021b and up
 - python 3.6 and up
 - python virtual environment listed in the requirements.txt file
-- [ViennaRNA package](https://www.tbi.univie.ac.at/RNA/index.html#download) installed 
 
 
 ---
