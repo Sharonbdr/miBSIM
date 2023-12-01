@@ -1,5 +1,5 @@
 ---
-Overview
+miBSIM - miRNA Binding Site Interaction Model
 ---
 This repository contains model applications for predicting miRNA-mediated repression predicted by our miBSIM tool. 
 
@@ -18,7 +18,7 @@ Data input
 This tool requires a txt file with transcripts of interest, columns delimited by '\t', vectors by ',':
 
  - transcripts :  a table of mRNAs containing the following columns- Name, UTR5, ORF, UTR3, phastcons100, phylops100, phastcons20, phylops20. 
-   Conservation vectors can be obtained using the [UCSC Genome Browser Database](https://hgdownload.soe.ucsc.edu/downloads.html) under Human genomes, hg38, Multiple alignment.
+   Conservation vectors can be obtained using the [UCSC Genome Browser Database](https://hgdownload.soe.ucsc.edu/downloads.html) under Human genomes > hg38 > Multiple alignment.
 
 An example is provided at Data/genes.txt.
 
