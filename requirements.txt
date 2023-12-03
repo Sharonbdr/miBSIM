@@ -1,6 +1,6 @@
 ## Environment
 
-tensorflow-gpu==1.13.1 #swap out tensorflow-gpu with tensorflow if not using GPUs
+tensorflow-gpu==1.13.1 #swap out tensorflow-gpu with tensorflow==1.13.1 if not using GPUs
 pandas==0.24.2
 matplotlib==3.0.3
 scipy==1.2.1
