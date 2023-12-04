@@ -8,7 +8,7 @@ System requirements
 ---
 
 - MATLAB 2021b and up
-- python 3.6 and up
+- python 3.6 - 3.7
 - python virtual environment listed in the requirements.txt file
 
 
