@@ -14,8 +14,8 @@ python Code/Features/Biochemical/get_biofeats.py \
 --name ${mirname} \
 --mirseq ${mirseq} \
 --transcripts ${transcript_file} \
---job_name ${job_name} \                                 
---remove_files True \
+--job_name ${job_name} \
+--remove_files \
 
 
 # miBSIM model
