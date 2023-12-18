@@ -36,9 +36,9 @@ The final model utilizes several published tools, therefore it requires numerous
 		--name mirname \
 		--mirseq mirseq \
 		--transcripts transcript_file \
-		--job_name job_name \ 
-		--remove_files False \   # optional
-		--skip_mir False \       # optional                                
+		--job_name job_name \
+		--remove_files \#     optional
+		--skip_mir \#         optional                                
 
 * **NOTE**: since miRNA biochemical feature generation is streamlined and sequential, step 1 computation time may be extensive. 
 Therefore, we added an option to skip redundant feature generation in the case these have already been generated for specific miRNA in the past.
