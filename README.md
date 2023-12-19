@@ -41,6 +41,7 @@ The final model utilizes several published tools, therefore it requires numerous
 		--skip_mir \#         optional                                
 
 --remove_files	: defaulte = FALSE, option to delete intermediate files created by the biochemical+ model.
+
 --skip_mir	: default = FALSE, option to skip miRNA biochemical feature generation assuming these files exist under the miR_DataFiles directory.
 
 * **NOTE**: miRNA biochemical feature generation was modified from original publication to be streamlined and sequential. This causes step 1 computation time to be extensive. 
