@@ -15,7 +15,7 @@ python Code/Features/Biochemical/get_biofeats.py \
 --mirseq ${mirseq} \
 --transcripts ${transcript_file} \
 --job_name ${job_name} \
-#--remove_files \
+--remove_files \
 #--skip_mir \
 
 
