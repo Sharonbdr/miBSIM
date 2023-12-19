@@ -42,7 +42,7 @@ The final model utilizes several published tools, therefore it requires numerous
 
 * **NOTE**: since miRNA biochemical feature generation is streamlined and sequential, step 1 computation time may be extensive. 
 Therefore, we added an option to skip redundant feature generation in the case these have already been generated for specific miRNA in the past.
-In this case, please make sure to save sub-proccesses files under the **--remove_files** optional flag to prevent the miRNA feature files to be deleted,
+In this case, please make sure to save sub-proccesses files (avoid the **--remove_files** optional flag) to prevent the miRNA feature files to be deleted,
 and to skip re-running these calculations by calling **--skip_mir** (both defaulted to **False**). These files are saved at the bio_output directory.
 This is relevant in the case of running different subsets of transcripts for the same miRNA, and allows for a much faster run-time.
 
