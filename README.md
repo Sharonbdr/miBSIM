@@ -40,7 +40,7 @@ The final model utilizes several published tools, therefore it requires numerous
 		--remove_files \#     optional
 		--skip_mir \#         optional                                
 
---remove_files	: defaulte = FALSE, option to delete intermediate files created by the biochemical+ model.
+--remove_files	: default = FALSE, option to delete intermediate files created by the biochemical+ model.
 
 --skip_mir	: default = FALSE, option to skip miRNA biochemical feature generation assuming these files exist under the miR_DataFiles directory.
 
