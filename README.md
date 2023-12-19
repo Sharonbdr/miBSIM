@@ -9,7 +9,7 @@ System requirements
 
 - MATLAB 2021b and up
 - python 3.6
-- python virtual environment listed in the requirements.txt file
+- python virtual environment listed in the requirements_gpu.txt or requirements_cpu.txt files
 
 
 ---
