@@ -58,7 +58,7 @@ features = calc_gen_features(UTR5,ORF,UTR3,region,seed_length,RNA_start,miRNA,se
 
 % Removes ViennaRNA scratch directory
 try 
-    rmdir(vienna_dir,'s');
+    rmdir(loc_path,'s');
 catch
     warning(sprintf("could not delete vienna scratch folder at %s, please delete manualy", vienna_dir));
 end
