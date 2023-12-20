@@ -47,7 +47,7 @@ The final model utilizes several published tools, therefore it requires numerous
 * **NOTE**: miRNA biochemical feature generation was modified from original publication to be streamlined and sequential. This causes step 1 computation time to be extensive. 
 Therefore, we added the option to skip miRNA biochemical feature generation by providing the files under the miR_DataFiles directory.
 In this case, call the **--skip_mir**  option (defaulted to **False**). This is also relevant in the case of running different subsets of transcripts for the same miRNA, and allows for a much faster run-time.
-Preprocessed miRNAs are published in the miR_DataFiles directory, please make sure to match miRNA name in a case sensitive manner.
+Preprocessed miRNAs are published in the miR_DataFiles file, please make sure to match miRNA name in a case sensitive manner.
 
 
 
@@ -68,3 +68,10 @@ Please make sure you set all files premissions to read write and execute. This i
 - Code/Features/Conservation/pmc.markov
 - Code/Features/Conservation/pmc.sci
 - Code/Features/Conservation/spatt
+
+---
+Pre-loaded miR files
+---
+Preprocessed miRNAs are published as miR_DataFiles.zip. To utilize these files:
+- Unzip folder to root so that mir*_kds.txt and canon_mir*bg_vals.txt files would be under the /miR_DataFiles/ directory.
+- Add the --skip_mir option when calling the Code/Features/Biochemical/get_biofeats.py python function. 
