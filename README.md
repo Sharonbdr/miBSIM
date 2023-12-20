@@ -74,4 +74,5 @@ Pre-loaded miR files
 ---
 Preprocessed miRNAs are published as miR_DataFiles.zip. To utilize these files:
 - Unzip folder to root so that mir*_kds.txt and canon_mir*bg_vals.txt files would be under the /miR_DataFiles/ directory.
-- Add the --skip_mir option when calling the Code/Features/Biochemical/get_biofeats.py python function. 
+- Add the --skip_mir option when calling the Code/Features/Biochemical/get_biofeats.py python function.
+- miRNA names are case sensitive, make sure to match input name to files in folder.
