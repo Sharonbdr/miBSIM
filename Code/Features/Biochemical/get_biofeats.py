@@ -95,7 +95,7 @@ if __name__ == '__main__':
             print('done %i out of 9'%i)
         from combine_resultsFunc import *
         combine_res(MIRNAME = options.MIRNAME, MIRSEQ = options.MIRSEQ, INFILE_SEQS = utldir + 'canon_MIR_IX.txt',
-                    INFILE_BG = utldir + 'canon_MIR_IX_bg_vals.txt', OUTFILE = mir_folder+'canon_'+options.MIRNAME+'bg_vals.txt')
+                    INFILE_BG = utldir + 'canon_MIR_IX_bg_vals.txt', OUTFILE = mir_folder+'canon_'+options.MIRNAME+'_bg_vals.txt')
         print('done miRNA')
 
 
@@ -118,7 +118,7 @@ if __name__ == '__main__':
     os.chdir('../get_features')
     from write_sitesFunc import *
     write_sites(MIRNAME = options.MIRNAME, MIRSEQ_IN = options.MIRSEQ, TRANSCRIPTS_IN = options.TRANSCRIPTS,
-                KDS_IN = mir_folder+options.MIRNAME+'_kds.txt', SA_BG = mir_folder+'canon_'+options.MIRNAME+'bg_vals.txt',
+                KDS_IN = mir_folder+options.MIRNAME+'_kds.txt', SA_BG = mir_folder+'canon_'+options.MIRNAME+'_bg_vals.txt',
                 RNAPLFOLD_DIR = utldir, OUTFILE = utldir+options.JOB+'_'+options.MIRNAME+'_feats.txt')
     print('done sites')
 
